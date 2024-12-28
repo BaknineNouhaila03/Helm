@@ -1,5 +1,7 @@
 apiVersion: v2
 name: baknine-helm
-description: A Helm chart for a 3-tier application
+description: A Helm chart for my student manager
 version: 0.1.0
 appVersion: "1.0.0"
+
+

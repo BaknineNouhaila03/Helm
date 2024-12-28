@@ -9,12 +9,12 @@ database:
     POSTGRES_DB: "projet"
 
 frontend:
-  image: "localhost:7000/frontend-image-final:1.0.0"
+  image: "nouhabk23/frontend-image-final:1.0.1"
   replicas: 1
 
 backend:
-  image: "localhost:7000/backend-image-final:1.0.0"
+  image: "nouhabk23/backend-image-final:1.0.3"
   replicas: 1
   databaseURL: "jdbc:postgresql://database:5432/projet"
-  databaseUsername: "user"
-  databasePassword: "password"
+  databaseUsername: "postgres"
+  databasePassword: "nouhaila"
