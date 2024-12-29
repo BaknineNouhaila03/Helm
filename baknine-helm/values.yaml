@@ -6,7 +6,7 @@ database:
   env:
     POSTGRES_USER: "postgres"
     POSTGRES_PASSWORD: "nouhaila"
-    POSTGRES_DB: "projet"
+    POSTGRES_DB: "postgres"
 
 frontend:
   image: "nouhabk23/frontend-image-final:1.0.1"
@@ -15,6 +15,6 @@ frontend:
 backend:
   image: "nouhabk23/backend-image-final:1.0.3"
   replicas: 1
-  databaseURL: "jdbc:postgresql://database:5432/projet"
+  databaseURL: "jdbc:postgresql://database:5432/postgres"
   databaseUsername: "postgres"
   databasePassword: "nouhaila"

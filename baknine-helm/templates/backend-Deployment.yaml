@@ -24,3 +24,5 @@ spec:
               value: {{ .Values.backend.databaseUsername }}
             - name: SPRING_DATASOURCE_PASSWORD
               value: {{ .Values.backend.databasePassword }}
+            - name: SPRING_JPA_HIBERNATE_DDL_AUTO
+              value: "create-drop"
